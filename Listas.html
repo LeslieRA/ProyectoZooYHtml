@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
+    <style>
+        .bloque {
+            
+            width: 100%; /* Cada bloque ocupa el 50% del ancho */
+            padding:10px; /* Espaciado interno */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 10px; /* Espacio entre los bloques */
+        }
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-image: url('fondo.png');
+            position: fixed;
+            height: 100%;
+            border: white 5px;
+            overflow: auto;
+        }
+        
+        ul.sidenav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #ff8800;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #ff8800;
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+    </style>
+    
+    <style>
+        /* Estilo para ocultar el enlace */
+        .enlace-oculto {
+            color: inherit; /* Hereda el color del texto padre */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+    </style>
+
+    <style>
+        
+        /* Estilo para los bloques */
+        .bloque {
+            padding: 30px; /* Espaciado interno */
+            padding-left: 5%;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para los bloques */
+            width: 100%; /* Ancho del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        
+    </style>
+</head>
+
+<ul class="sidenav">
+    <td><img src="icons8-menú-50.png" height="30"></td> 
+    <td><img src="icons8-usuario-50.png" height="30"></td>
+    <td><img src="logo.png" height="30"c> </td>
+    <li><a class="active" href="#home">Menu de contenido</a></li>
+    <li><a href="#news">ul</a></li>
+    <li><a href="#contact">ol</a></li>
+    <li><a href="#about">li</a></li>
+    <li><a href="#news">dl</a></li>
+    <li><a href="#contact">dt</a></li>
+    <li><a href="#about">dd</a></li>
+</ul>
+
+</head>
+<body>
+    <div class="container">
+        <center>
+            <div style="background-color: white; width: 35%;border-radius: 60px;align-content: center;">
+                <h1 style="color: #4d4d4d;">Etiquetas para crear listas</h1>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >ul</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (ul) define una lista no ordenada en HTML, donde los elementos de la lista se presentan con viñetas (puntos)
+                     por defecto. Se utiliza para agrupar una colección de elementos de manera que no haya un orden específico de prioridad
+                      o secuencia. Dentro de (ul), cada elemento de la lista se coloca dentro de una etiqueta (li). Es ideal para listas de
+                       ítems que no requieren un orden numérico, como características o tareas.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;ul &gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;">
+                                     <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de UL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+                                                &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+                                                &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                                </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >ol</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (ol) se utiliza para crear una lista ordenada, donde los elementos se presentan con números o letras que indican
+                     su posición secuencial. Cada elemento de la lista se coloca dentro de una etiqueta (li) y se numera automáticamente por el
+                      navegador. Es útil cuando el orden de los elementos es importante, como en instrucciones paso a paso o listas de clasificación.
+                       También se puede personalizar el tipo de numeración con el atributo type.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;ol&gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de OL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;ol&gt;
+                                                &lt;li&gt;Elemento ordenado 1&lt;/li&gt;
+                                                &lt;li&gt;Elemento ordenado 2&lt;/li&gt;
+                                                &lt;li&gt;Elemento ordenado 3&lt;/li&gt;
+                                            &lt;/ol&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >li</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (li) define un elemento dentro de una lista, ya sea ordenada (ol) o no ordenada (ul).
+                     Cada (li) representa un ítem individual en la lista y puede contener texto, enlaces, imágenes u otros elementos HTML.
+                      Es la unidad básica que compone el contenido de las listas en HTML. Las listas anidadas se crean colocando (ul) o (ol)
+                       dentro de un (li), creando así sublistas. Es una herramienta clave para estructurar contenido en listas.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;li &gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                             <pre>
+                                 &lt;html&gt;
+                                 &lt;head&gt;
+                                     &lt;title&gt;Ejemplo de LI&lt;/title&gt;
+                                 &lt;/head&gt;
+                                 &lt;body&gt;
+                                     &lt;ul&gt;
+                                         &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+                                         &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+                                         &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+                                     &lt;/ul&gt;
+                                 &lt;/body&gt;
+                                 &lt;/html&gt;
+                                 
+                                </pre>
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dl</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dl) se utiliza para definir una lista de definición, que es un tipo especial de lista en HTML.
+                    Esta lista consta de pares de términos y sus descripciones. Dentro de (dl), se agrupan términos (dt) y descripciones (dd),
+                     lo que es útil para glosarios, diccionarios, o listas de características y valores. No tiene un formato visual predeterminado,
+                      pero se utiliza comúnmente para listas donde los elementos necesitan explicación adicional.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dl&gt;</td>             
+                                <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                         
+                                       </pre>
+                                </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dt</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dt) define un término en una lista de definición (dl). Se utiliza para representar el término que será definido
+                     o descrito por el siguiente elemento (dd). En un glosario, por ejemplo, (dt) podría contener una palabra que luego se explica
+                      en el (dd) correspondiente. Es parte del par clave que forma una lista de definición, y se utiliza 
+                      para identificar el elemento que se está definiendo.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dt&gt;</td>             
+                                  <td style="padding: 8px; border: 2px solid #ddd;">
+                                     <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DT&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                      </pre>
+                                  </td> 
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dd</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dd) se utiliza para proporcionar la descripción o definición de un término definido por (dt) en una
+                     lista de definición (dl). Aparece justo después del término al que describe y generalmente se indenta para diferenciarse
+                      visualmente. Es útil para proporcionar detalles adicionales o explicaciones sobre el término presentado en (dt).
+                       Las listas de definición son ideales para glosarios, términos y condiciones, o especificaciones de productos.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dd &gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DD&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

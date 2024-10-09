@@ -1,0 +1,193 @@
+/* General */
+:root {
+    --primary-color: #6785BA; /* Color principal */
+    --secondary-color: #e0e0e0; /* Color de fondo del encabezado y sección del veterinario */
+    --background-color: #f5f5f5; /* Color de fondo de la página */
+    --text-color: #333; /* Color de texto */
+    --footer-color: #333; /* Color de fondo del pie de página */
+    --footer-text-color: #fff; /* Color de texto del pie de página */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Main Banner */
+.main-banner {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url('pngwing.com.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white;
+    background-color: #cfe8fc;
+    height: 500px;
+}
+
+
+
+
+
+.main-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.main-banner button {
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.main-banner button:hover {
+    background-color: #555;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+}
+
+.card {
+    width: 250px; /* Establece un ancho fijo para todas las tarjetas */
+    height: 450px; /* Establece una altura fija para todas las tarjetas */
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 100%; /* Hace que las imágenes ocupen todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio necesario */
+}
+
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada */
+}
+
+/* Veterinarian Section */
+.veterinarian {
+    padding: 50px 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.vet-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vet-info img {
+    width: 200px;
+    height: auto;
+}
+
+.vet-info p {
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--footer-color);
+    color: var(--footer-text-color);
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Permitir que las tarjetas ocupen más espacio en pantallas pequeñas */
+    }
+
+    .vet-info {
+        flex-direction: column; /* Apilar elementos verticalmente en pantallas más pequeñas */
+    }
+}

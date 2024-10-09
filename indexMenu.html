@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+   
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        
+        li a {
+            display: block;
+            color: rgb(5, 5, 5);
+            text-align: center;
+            padding: 25px 15px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #ec9d0b;
+        }
+        
+        .active {
+            background-color: #eba40d;
+        }
+    </style>
+
+<style>
+    /* Estilo para el contenedor */
+    .container {
+        display: flex; /* Utiliza flexbox para alinear los bloques */
+    }
+    
+    /* Estilo para los bloques */
+    .bloque {
+        
+        width: 100%; /* Cada bloque ocupa el 50% del ancho */
+        padding:10px; /* Espaciado interno */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+        margin: 10px; /* Espacio entre los bloques */
+    }
+</style>
+<style>
+    /* Estilo para ocultar el enlace */
+    .enlace-oculto {
+        color: inherit; /* Hereda el color del texto padre */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+</style>
+</head>
+
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home" style="float: left">Inicio</a></li>
+        <li><a href="#news" style="float: left">Noticias</a></li>
+        <li><a href="#contact" style="float: left">Contactanos</a></li>
+        <li><a href="#about" style="float: left">Acerca de nosotros</a></li>
+        <li><a href="#about" style="float: left">Paginas recomendadas</a></li>
+        <li><a href="indexZologicoL.html" style="float: left">Zoológico Leslie</a></li>
+        <li><a href="Index.html" style="float: left">Zoológico Denilson</a></li>
+
+
+
+        <li><img src="icons8-usuario-50.png" style="float: right;"></li>
+        <li><img src="icons8-menú-50.png" style="float: right"></li>
+        <li><img src="logo.png" style="float: right"></li>
+    </ul>
+
+    <!--CUERPO DEL MENU-->
+    <div class="container">
+        <div class="bloque">
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 35%;border-radius: 60px;align-content: center;">
+                    <h2 style="font-size: 48px; font-family: 'Roboto Black'; color:#4d4d4d;text-align: center;">Etiquetas de HTML</h2>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">01</b>
+                    <a href="Base de documento.html" class="enlace-oculto" style="font-family: Futura Bold;">Base del documento</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%;">
+                        Las etiquetas de creación del documento HTML son fundamentales porque establecen la estructura, el comportamiento
+                        y la interpretación adecuada del contenido web tanto para los navegadores como para otros sistemas (como motores
+                        de búsqueda y lectores de pantalla). A continuación se detallan las razones por las que son importantes y útiles:
+                    </p>
+                    <img src="https://disenowebakus.net/imagenes/articulos/estructura-basica-de-una-pagina-web-en-html.jpg" style="width: 75%; height: 50%; object-fit: cover;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">02</b>
+                    <a href="DividirSecciones.html" class="enlace-oculto" style="font-family: Futura Bold;">Dividir secciones</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%">
+                        En HTML, hay varias etiquetas que se usan comúnmente para dividir el contenido en secciones o áreas estructuradas
+                         de una página web. Estas etiquetas no solo organizan visualmente la página, sino que también ayudan a mejorar la
+                          accesibilidad y el SEO al darle más sentido al contenido.
+                    </p>
+                    <h3 style="font-size: 39px;">Dividir secciones</h3>
+                    <img src="https://lh4.googleusercontent.com/SMqJFaDKhB3Kk4A3NZaKIBpvC0Qm-_cbwqh1sYzNX2IOeukFNFvxxf87pgFpL-Qh8owyRfX6WzJlcM7XmxbBEdlllyGcGt6B7KtVGpeY_ZJtx0oFeJFN-sAh__mpkuomLNAxHo8" style="width: 50%; height: 25%; object-fit: cover;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center;">
+                    <b style="font-size: 40px; color: #4d4d4d">03</b>
+                    <a href="CrearTextos.html" class="enlace-oculto" style="font-family: Futura Bold;">Creacion de textos</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%">
+                        Las etiquetas de creación de texto en HTML son esenciales para formatear, estructurar y dar significado semántico
+                         al contenido textual en una página web. Estas etiquetas no solo influyen en cómo se ve el texto, sino también en
+                          cómo es interpretado por los motores de búsqueda, lectores de pantalla y otros sistemas, lo cual es crucial para
+                           la accesibilidad y el SEO.
+                    </p>
+                    <h3 style="font-size: 39px;">Creacion de etiquetas</h3>
+                    <img src="https://www.epitech-it.es/wp-content/uploads/2023/01/que-son-las-etiquetas-de-programacion-1-1024x425.jpg" style="width: 60%; height: 60%; object-fit: cover;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">04</b>
+                    <a href="Listas.html" class="enlace-oculto" style="font-family: Futura Bold;">Creacion de listas</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%;">
+                        Las etiquetas de creación de listas en HTML son fundamentales para organizar contenido en un formato claro y fácil
+                         de leer. Las listas permiten estructurar información de manera jerárquica o secuencial, facilitando la presentación
+                          de elementos relacionados. Además de mejorar la legibilidad, también aportan un valor semántico que beneficia
+                           tanto a los usuarios como a los motores de búsqueda y lectores de pantalla
+                    </p>
+                    <h3 style="font-size: 39px;">Creacion de listas</h3>
+                    <img src="https://disenowebakus.net/imagenes/articulos/listas-html-ul-ol-dl.jpg" style="width: 50%; height: 50%; object-fit: cover; border-radius: 50px;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">05</b>
+                    <a href="Tablas.html" class="enlace-oculto" style="font-family: Futura Bold; align-content: ce;">Creacion de tablas</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%">
+                        Las tablas en HTML son una herramienta poderosa para organizar y presentar datos tabulares en filas y columnas.
+                         Son esenciales cuando se necesita mostrar información estructurada de manera clara y precisa, como estadísticas,
+                          horarios, comparaciones o cualquier conjunto de datos que requiera una estructura bien definida.
+                    </p>
+                    <img src="https://www.apinem.com/wp-content/uploads/2024/04/tabla-html-etiqueta-td.png" style="width: 50%; height: 50%; object-fit: cover; border-radius: 50px;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">06</b>
+                    <a href="DividirSecciones.html" class="enlace-oculto" style="font-family: Futura Bold; align-content: ce;">Multiedia y scripts</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%">
+                        Las etiquetas para multimedia y scripts en HTML juegan un papel crucial en la interactividad, dinamismo, y
+                        enriquecimiento visual de las páginas web. A través de estas etiquetas, es posible integrar audio, video, gráficos
+                         y ejecutar scripts que añaden funcionalidades interactivas, lo que mejora significativamente la experiencia del usuario.
+                    </p>
+                    <img src="https://dinahosting.com/blog/upload/2023/10/Imagen-principal-blog-15-1.jpg" style="width: 50%; height: 50%; object-fit: cover;border-radius: 50px;">
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 25%;border-radius: 60px;align-content: center">
+                    <b style="font-size: 40px; color: #4d4d4d">07</b>
+                    <a href="DividirSecciones.html" class="enlace-oculto" style="font-family: Futura Bold; align-content: ce;">Formularios</a>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="background-color: white; width: 60%;border-radius: 60px;align-content: center">
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; width: 90%; height: 90%">
+                        Los formularios en HTML son una parte fundamental para la interacción entre los usuarios y los sitios web. 
+                        A través de formularios, los usuarios pueden introducir datos, realizar búsquedas, registrarse en plataformas,
+                         enviar comentarios, y mucho más. El manejo correcto de los formularios permite una recopilación de información
+                          eficiente, mejorando la experiencia del usuario y la funcionalidad del sitio web.
+                    </p>
+                    <img src="https://i.ytimg.com/vi/Psb5JXGgno4/hqdefault.jpg" style="width: 50%; height: 50%; object-fit: cover;border-radius: 50px;">
+                </div>
+            </center>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
+    <style>
+        .bloque {
+            
+            width: 100%; /* Cada bloque ocupa el 50% del ancho */
+            padding:10px; /* Espaciado interno */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 10px; /* Espacio entre los bloques */
+        }
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-image: url('fondo.png');
+            position: fixed;
+            height: 100%;
+            border: white 5px;
+            overflow: auto;
+        }
+        
+        ul.sidenav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #ff8800;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #ff8800;
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+    </style>
+    
+    <style>
+        /* Estilo para ocultar el enlace */
+        .enlace-oculto {
+            color: inherit; /* Hereda el color del texto padre */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+    </style>
+
+    <style>
+        
+        /* Estilo para los bloques */
+        .bloque {
+            padding: 30px; /* Espaciado interno */
+            padding-left: 5%;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para los bloques */
+            width: 100%; /* Ancho del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        
+    </style>
+</head>
+
+<ul class="sidenav">
+    <td><img src="icons8-menú-50.png" height="30"></td> 
+    <td><img src="icons8-usuario-50.png" height="30"></td>
+    <td><img src="logo.png" height="30"c> </td>
+    <li><a class="active" href="#home">Menu de contenido</a></li>
+    <li><a href="#news">P</a></li>
+    <li><a href="#contact">H1-H6</a></li>
+    <li><a href="#about">Hgroup</a></li>
+    <li><a href="#news">A</a></li>
+    <li><a href="#contact">Strong</a></li>
+    <li><a href="#about">Em</a></li>
+    <li><a href="#contact">U</a></li>
+    <li><a href="#about">Del</a></li>
+    <li><a href="#news">Sup</a></li>
+    <li><a href="#news">Sub</a></li>
+    <li><a href="#contact">Blockquete</a></li>
+    <li><a href="#about">Q</a></li>
+    <li><a href="#contact">Pre</a></li>
+    <li><a href="#contact">Abbr</a></li>
+    <li><a href="#about">Adress</a></li>
+    <li><a href="#contact">Cite</a></li>
+</ul>
+</head>
+
+
+<body>
+    <div class="container">
+        <center>
+            <div style="background-color: white; width: 35%;border-radius: 60px;align-content: center;">
+                <h1 style="color: #4d4d4d;">Etiquetas para crear textos</h1>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >P</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (p) se utiliza para definir un párrafo de texto en un documento HTML.
+                     Es la forma más común de agrupar y presentar bloques de texto, y se utiliza para estructurar el 
+                     contenido en fragmentos lógicos y legibles. El texto dentro de un (p) generalmente se muestra con 
+                        un espacio (margen) antes y después del párrafo para separarlo de otros elementos en la página.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;P&gt;</td>             
+                                    <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                        <pre>
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                                &lt;title&gt;Ejemplo de Párrafo&lt;/title&gt;
+                                            &lt;/head&gt;
+                                            &lt;body&gt;
+                                                &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                            
+                                        </pre>
+                                    </td>
+                                </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >H1-H6</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    Las etiquetas (h1) a (h6) se utilizan para definir encabezados (títulos)
+                         de diferentes niveles de importancia en un documento HTML. Los encabezados ayudan a estructurar 
+                         el contenido jerárquicamente, desde el nivel más alto (h1) hasta el más bajo (h6). Esto mejora 
+                            tanto la legibilidad para los usuarios como la accesibilidad para los motores de búsqueda y lectores 
+                            de pantalla.  
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;H1-H6&gt;</td>             
+                                        <td style="padding: 8px; border: 2px solid #ddd;">
+                                             <pre>
+                                                &lt;html&gt;
+                                                &lt;
+                                                                                                 
+                                            </pre>
+                                    </td>
+                                </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Hgroup</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    En HTML, el elemento hgroup es un contenedor que agrupa encabezados (h1, h2, etc.) con el propósito de jerarquizar
+                         y semánticamente agrupar diferentes niveles de encabezados que pertenecen al mismo bloque de contenido. 
+                         Se utilizaba para situaciones en las que había un encabezado principal seguido de subtítulos relacionados.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;Hgroup&gt;</td>             
+                                    <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                        <pre>
+                                               &lt;html&gt;
+                                                &lt;head&gt;
+                                                  &lt;/head&gt;
+                                                  &lt;body&gt;
+                                                &lt;hgroup&gt;
+                                            &lt;h1&gt;Título Principal&lt;/h1&gt;
+                                         &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                                       &lt;/hgroup&gt;
+                                          &lt;/body&gt;
+                                               &lt;/html&gt;
+                                        </pre>
+                                    </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >A</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (a) se utiliza para definir un hipervínculo en un documento HTML. Un hipervínculo es un enlace 
+                        que puede dirigir al usuario a otra página web, a una sección diferente dentro de la misma página, a un 
+                        archivo, o incluso iniciar una acción como enviar un correo electrónico. La etiqueta (a) es esencial para 
+                            la navegación en la web.  
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;a&gt;</td>             
+                                        <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                                                &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;Ejemplo de Enlace&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                    &lt;a href=&quot;https://www.ejemplo.com&quot;&gt;Visita Ejemplo.com&lt;/a&gt;
+                                                &lt;/body&gt;
+                                                &lt;/html&gt;
+                                                
+                                            </pre>
+                                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Strong</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta strong se utiliza para resaltar un fragmento de texto que tiene importancia o énfasis fuerte dentro de un documento HTML. 
+                        Por defecto, el texto dentro de (strong) se muestra en negrita en la mayoría de los navegadores, 
+                            lo que visualmente indica su relevancia. Sin embargo, la etiqueta tiene un significado semántico que va 
+                            más allá de la simple presentación visual, sugiriendo que el texto es de alta importancia.  
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;strong&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                <pre>
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Strong&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;p&gt;Este texto es &lt;strong&gt;importante&lt;/strong&gt; y debe ser enfatizado.&lt;/p&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                    
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Em</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (em) se utiliza para marcar texto que debe ser enfatizado en un documento HTML. Generalmente, el texto dentro de (em) 
+                        se muestra en cursiva en la mayoría de los navegadores, pero el propósito principal de la etiqueta es añadir un énfasis sutil
+                         al contenido, indicando que este texto tiene un significado o tono especial. Semánticamente, (em) sugiere un énfasis moderado, 
+                            lo cual puede ser interpretado por lectores de pantalla y motores de búsqueda.  
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;em&gt;</td>             
+                                <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Em&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        &lt;p&gt;Este texto está &lt;em&gt;enfatizado&lt;/em&gt; para resaltar su importancia.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                    </pre>
+                                </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >U</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (u) se utiliza para subrayar texto en un documento HTML. Aunque antiguamente se usaba exclusivamente para subrayar contenido, 
+                        en HTML5 se ha redefinido con un propósito más específico: indicar texto que debe diferenciarse visualmente por ser, por ejemplo,
+                         un error tipográfico, un nombre propio, o una palabra extranjera. Sin embargo, visualmente, el contenido dentro de (u)
+                             sigue apareciendo subrayado en la mayoría de los navegadores.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;u&gt;</td>             
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                                &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;Ejemplo de U&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                    &lt;p&gt;Este texto está &lt;u&gt;bajo subrayado&lt;/u&gt; para indicar énfasis.&lt;/p&gt;
+                                                &lt;/body&gt;
+                                                &lt;/html&gt; 
+                                 </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Del</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (del) se utiliza para indicar que un texto ha sido eliminado o que ya no es relevante en el documento HTML.
+                         El texto dentro de (del) generalmente se muestra con una línea tachada, lo que visualmente comunica que esa parte del
+                             texto ha sido modificada, reemplazada o ya no es válida. Esta etiqueta es útil para mostrar cambios en un documento, 
+                             como correcciones, actualizaciones, o contenido que se ha descartado.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;del&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;">
+                                <pre>
+                                   &lt;html&gt;
+                                   &lt;head&gt;
+                                       &lt;title&gt;Ejemplo de Del&lt;/title&gt;
+                                   &lt;/head&gt;
+                                   &lt;body&gt;
+                                       &lt;p&gt;Este texto ha sido &lt;del&gt;eliminado&lt;/del&gt; y no es válido.&lt;/p&gt;
+                                   &lt;/body&gt;
+                                   &lt;/html&gt;
+                                   
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Sup</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (sup )se utiliza para definir texto que debe mostrarse como superíndice en un documento HTML.
+                    Un superíndice es un texto más pequeño que se coloca ligeramente por encima de la línea base del texto normal.
+                     Es comúnmente usado en notaciones matemáticas, científicas, y en referencias como notas al pie.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;sup&gt;</td>             
+                                      <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                        <pre>
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                                &lt;title&gt;Ejemplo de Sub&lt;/title&gt;
+                                            &lt;/head&gt;
+                                            &lt;body&gt;
+                                                &lt;p&gt;El agua es H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                            
+                                          </pre>
+                                      </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Sub</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (sub) se utiliza para definir texto que debe mostrarse como subíndice en un documento HTML.
+                         Un subíndice es un texto más pequeño que se coloca ligeramente por debajo de la línea base del texto normal, 
+                         comúnmente utilizado en fórmulas matemáticas, químicas, y notaciones científicas.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;sub&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;">
+                                <pre>
+                                   &lt;html&gt;
+                                   &lt;head&gt;
+                                       &lt;title&gt;Ejemplo de Sup&lt;/title&gt;
+                                   &lt;/head&gt;
+                                   &lt;body&gt;
+                                       &lt;p&gt;El área de un cuadrado es lado&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+                                   &lt;/body&gt;
+                                   &lt;/html&gt;
+                                   
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Blockquete</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (blockquote) se utiliza para definir una cita de un texto extenso. Esta etiqueta indica que el
+                    contenido es una cita de otra fuente, y generalmente se presenta con un sangrado a la izquierda 
+                    (o a la derecha, dependiendo del estilo) para diferenciarlo del texto normal. Es útil para dar contexto a las citas
+                     y resaltar su importancia.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;blockquote&gt;</td>             
+                                      <td style="padding: 8px; border: 2px solid #ddd;">
+                                         <pre>
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                                &lt;title&gt;Ejemplo de Blockquote&lt;/title&gt;
+                                            &lt;/head&gt;
+                                            &lt;body&gt;
+                                                &lt;blockquote&gt;
+                                                    &lt;p&gt;Este es un bloque de cita.&lt;/p&gt;
+                                                &lt;/blockquote&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                            
+                                          </pre>
+                                      </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Q</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (q) se utiliza para marcar una cita corta dentro de un párrafo. A diferencia de (blockquote),
+                        que se usa para citas largas y generalmente se presenta en un bloque separado, (q) se utiliza para citas más breves que 
+                            se integran directamente en el flujo del texto. Por defecto, el texto dentro de (q) se muestra entre comillas, lo que indica 
+                                que es una cita.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;q&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                <pre>
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Q&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;p&gt;Ella dijo: &lt;q&gt;Esto es increíble.&lt;/q&gt;&lt;/p&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                    
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Pre</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (pre) se utiliza para definir texto que debe ser presentado en un formato preformateado.
+                         El contenido dentro de (pre) se muestra con un espaciado y una alineación exactos, respetando los espacios en blanco, 
+                            los saltos de línea y los caracteres de tabulación. Esto es útil para mostrar código fuente, poesía, o cualquier texto donde 
+                            la presentación precisa sea importante.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;pre&gt;</td>             
+                                        <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                                                &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;Ejemplo de Pre&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                    &lt;pre&gt;Este es un texto
+                                                con saltos de línea
+                                                y espacios preservados.&lt;/pre&gt;
+                                                &lt;/body&gt;
+                                                &lt;/html&gt;
+                                                
+                                            </pre>
+                                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Abbr</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (abbr) se utiliza para representar una abreviatura o acrónimo en un documento HTML. 
+                        Al usar esta etiqueta, se puede proporcionar información adicional sobre el significado de la abreviatura a través 
+                        del atributo title, que aparece como un tooltip (información emergente) cuando el usuario pasa el cursor sobre la 
+                        abreviatura. Esto mejora la accesibilidad y comprensión del contenido. 
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;abbr&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                <pre>
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Abbr&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;p&gt;La &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; es un lenguaje de marcado.&lt;/p&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                    
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Adress</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (address)se utiliza para proporcionar información de contacto sobre una persona o una organización en 
+                        un documento HTML. Este elemento se suele utilizar para incluir direcciones físicas, direcciones de correo electrónico,
+                         números de teléfono, y otros datos relevantes relacionados con el contacto. Por convención, el contenido de address 
+                            puede estar formateado de manera especial en algunos navegadores, lo que resalta su naturaleza informativa. 
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;adress&gt;</td>             
+                                        <td style="padding: 8px; border: 2px solid #ddd;">
+                                             <pre>
+                                                &lt;html&gt;
+                                                &lt;head&gt;
+                                                    &lt;title&gt;Ejemplo de Address&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                    &lt;address&gt;
+                                                        John Doe&lt;br&gt;
+                                                        123 Main St.&lt;br&gt;
+                                                        Anytown, USA&lt;br&gt;
+                                                    &lt;/address&gt;
+                                                &lt;/body&gt;
+                                                &lt;/html&gt;
+                                                
+                                            </pre>
+                                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Cite</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta Cite> se utiliza para marcar el título de una obra, como un libro, una película, un artículo, una canción, 
+                        o cualquier otra creación artística. El contenido dentro de <cite> generalmente se presenta en cursiva, indicando que 
+                            se refiere a un trabajo o una fuente específica. Esta etiqueta ayuda a dar reconocimiento a las obras citadas y
+                             proporciona contexto en documentos académicos y literarios.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;cite&gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                               <pre>
+                                   &lt;html&gt;
+                                   &lt;head&gt;
+                                       &lt;title&gt;Ejemplo de Cite&lt;/title&gt;
+                                   &lt;/head&gt;
+                                   &lt;body&gt;
+                                       &lt;p&gt;Esto es mencionado en &lt;cite&gt;Un libro famoso&lt;/cite&gt;.&lt;/p&gt;
+                                   &lt;/body&gt;
+                                   &lt;/html&gt;
+                                   
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

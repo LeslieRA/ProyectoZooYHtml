@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pngwing.com\ \(1\).png');
+}
+
+.training-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-cards {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.card {
+    background-color: #a53131;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    width: 600px; /* Ancho aumentado */
+    max-width: 800px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+}

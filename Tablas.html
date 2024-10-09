@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
+    <style>
+        .bloque {
+            
+            width: 100%; /* Cada bloque ocupa el 50% del ancho */
+            padding:10px; /* Espaciado interno */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 10px; /* Espacio entre los bloques */
+        }
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-image: url('fondo.png');
+            position: fixed;
+            height: 100%;
+            border: white 5px;
+            overflow: auto;
+        }
+        
+        ul.sidenav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #ff8800;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #ff8800;
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+    </style>
+    
+    <style>
+        /* Estilo para ocultar el enlace */
+        .enlace-oculto {
+            color: inherit; /* Hereda el color del texto padre */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+    </style>
+
+    <style>
+        
+        /* Estilo para los bloques */
+        .bloque {
+            padding: 30px; /* Espaciado interno */
+            padding-left: 5%;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para los bloques */
+            width: 100%; /* Ancho del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        
+    </style>
+</head>
+
+<ul class="sidenav">
+    <td><img src="icons8-menú-50.png" height="30"></td> 
+    <td><img src="icons8-usuario-50.png" height="30"></td>
+    <td><img src="logo.png" height="30"c> </td>
+    <li><a class="active" href="#home">Menu de contenido</a></li>
+    <li><a href="#news">ul</a></li>
+    <li><a href="#contact">ol</a></li>
+    <li><a href="#about">li</a></li>
+    <li><a href="#news">dl</a></li>
+    <li><a href="#contact">dt</a></li>
+    <li><a href="#about">dd</a></li>
+    <li><a href="#about">table</a></li>
+    <li><a href="#about">Caption</a></li>
+    <li><a href="#about">th</a></li>
+    <li><a href="#about">tr</a></li>
+    <li><a href="#about">td</a></li>
+    <li><a href="#about">thead</a></li>
+    <li><a href="#about">tbody</a></li>
+    <li><a href="#about">tfoot</a></li>
+    <li><a href="#about">col</a></li>
+    <li><a href="#about">colgroup</a></li>
+</ul>
+
+</head>
+<body>
+    <div class="container">
+        <center>
+            <div style="background-color: white; width: 35%;border-radius: 60px;align-content: center;">
+                <h1 style="color: #4d4d4d;">Etiquetas para crear tablas</h1>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >ul</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (ul) define una lista no ordenada en HTML, donde los elementos de la lista se presentan con viñetas (puntos)
+                     por defecto. Se utiliza para agrupar una colección de elementos de manera que no haya un orden específico de prioridad
+                      o secuencia. Dentro de (ul), cada elemento de la lista se coloca dentro de una etiqueta (li). Es ideal para listas de
+                       ítems que no requieren un orden numérico, como características o tareas.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;ul &gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;">
+                                     <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de UL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+                                                &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+                                                &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                                </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >ol</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (ol) se utiliza para crear una lista ordenada, donde los elementos se presentan con números o letras que indican
+                     su posición secuencial. Cada elemento de la lista se coloca dentro de una etiqueta (li) y se numera automáticamente por el
+                      navegador. Es útil cuando el orden de los elementos es importante, como en instrucciones paso a paso o listas de clasificación.
+                       También se puede personalizar el tipo de numeración con el atributo type.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;ol&gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de OL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;ol&gt;
+                                                &lt;li&gt;Elemento ordenado 1&lt;/li&gt;
+                                                &lt;li&gt;Elemento ordenado 2&lt;/li&gt;
+                                                &lt;li&gt;Elemento ordenado 3&lt;/li&gt;
+                                            &lt;/ol&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >li</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (li) define un elemento dentro de una lista, ya sea ordenada (ol) o no ordenada (ul).
+                     Cada (li) representa un ítem individual en la lista y puede contener texto, enlaces, imágenes u otros elementos HTML.
+                      Es la unidad básica que compone el contenido de las listas en HTML. Las listas anidadas se crean colocando (ul) o (ol)
+                       dentro de un (li), creando así sublistas. Es una herramienta clave para estructurar contenido en listas.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;li &gt;</td>             
+                            <td style="padding: 8px; border: 2px solid #ddd;"> 
+                             <pre>
+                                 &lt;html&gt;
+                                 &lt;head&gt;
+                                     &lt;title&gt;Ejemplo de LI&lt;/title&gt;
+                                 &lt;/head&gt;
+                                 &lt;body&gt;
+                                     &lt;ul&gt;
+                                         &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+                                         &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+                                         &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+                                     &lt;/ul&gt;
+                                 &lt;/body&gt;
+                                 &lt;/html&gt;
+                                 
+                                </pre>
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dl</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dl) se utiliza para definir una lista de definición, que es un tipo especial de lista en HTML.
+                    Esta lista consta de pares de términos y sus descripciones. Dentro de (dl), se agrupan términos (dt) y descripciones (dd),
+                     lo que es útil para glosarios, diccionarios, o listas de características y valores. No tiene un formato visual predeterminado,
+                      pero se utiliza comúnmente para listas donde los elementos necesitan explicación adicional.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dl&gt;</td>             
+                                <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                         
+                                       </pre>
+                                </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dt</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dt) define un término en una lista de definición (dl). Se utiliza para representar el término que será definido
+                     o descrito por el siguiente elemento (dd). En un glosario, por ejemplo, (dt) podría contener una palabra que luego se explica
+                      en el (dd) correspondiente. Es parte del par clave que forma una lista de definición, y se utiliza 
+                      para identificar el elemento que se está definiendo.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dt&gt;</td>             
+                                  <td style="padding: 8px; border: 2px solid #ddd;">
+                                     <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DT&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                      </pre>
+                                  </td> 
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >dd</h3>
+            </div>
+            <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                    La etiqueta (dd) se utiliza para proporcionar la descripción o definición de un término definido por (dt) en una
+                     lista de definición (dl). Aparece justo después del término al que describe y generalmente se indenta para diferenciarse
+                      visualmente. Es útil para proporcionar detalles adicionales o explicaciones sobre el término presentado en (dt).
+                       Las listas de definición son ideales para glosarios, términos y condiciones, o especificaciones de productos.
+                </p>
+                <div class="bloque">
+                    <table style="width:60%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                            <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; border: 2px solid #ddd;">&lt;dd &gt;</td>             
+                                   <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de DD&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;dl&gt;
+                                                &lt;dt&gt;Término 1&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 1&lt;/dd&gt;
+                                                &lt;dt&gt;Término 2&lt;/dt&gt;
+                                                &lt;dd&gt;Descripción del término 2&lt;/dd&gt;
+                                            &lt;/dl&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                       </pre>
+                                   </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >table</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Esta etiqueta define el contenedor de una tabla en HTML. Todo el contenido de la tabla, incluidos encabezados, filas y celdas,
+                     se debe colocar dentro de esta etiqueta. Proporciona una estructura para organizar datos tabulares. Aunque no tiene un estilo
+                     predeterminado propio, los navegadores aplican un formato básico que se puede personalizar con CSS.
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;table &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de TABLE&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Dato 1&lt;/td&gt;
+                                            &lt;td&gt;Dato 2&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                                
+                                
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Capation </h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            La etiqueta (caption) se utiliza para proporcionar un título o descripción para la tabla. Generalmente, se coloca justo
+            después de la etiqueta (table), y se muestra encima de la tabla. Es útil para describir el contenido o propósito de la tabla.
+             Mejora la accesibilidad al permitir que los usuarios comprendan rápidamente el tema de la tabla. Aunque es opcional,
+            es recomendable en tablas complejas.
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Caption  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de CAPTION&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;caption&gt;Título de la tabla&lt;/caption&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Dato 1&lt;/td&gt;
+                                            &lt;td&gt;Dato 2&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Th </h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Define una celda de encabezado en una tabla, y el texto dentro de (th) suele aparecer en negrita y centrado.
+            Las celdas de encabezado son importantes para describir el contenido de las columnas o filas. Pueden utilizarse
+             en combinación con el atributo scope para mejorar la accesibilidad, indicando si el encabezado se aplica a una fila,
+              columna o grupo. Facilitan la comprensión de la estructura de los datos.    
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;   &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de CAPTION&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;caption&gt;Título de la tabla&lt;/caption&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Dato 1&lt;/td&gt;
+                                            &lt;td&gt;Dato 2&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt; 
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Tr </h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Representa una fila dentro de una tabla y agrupa celdas de encabezado (th) y celdas de datos (td). Cada fila (tr) organiza
+            los datos en la tabla de manera estructurada. Puede contener una combinación de diferentes tipos de celdas según lo requiera
+             la tabla. Es fundamental para crear la estructura vertical de la tabla. Las filas también pueden ser estilizadas 
+             para mejorar la legibilidad. 
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; tr  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de TH&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;table border=&quot;1&quot;&gt;
+                                                &lt;tr&gt;
+                                                    &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                                    &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;Dato 1&lt;/td&gt;
+                                                    &lt;td&gt;Dato 2&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/table&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt; 
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" > Td</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Define una celda de datos en una tabla, que es donde se coloca la información principal de la tabla.
+            Estas celdas contienen cualquier tipo de contenido, como texto, imágenes o enlaces. Se colocan dentro 
+            de las filas (tr) para organizar los datos de manera lógica. Pueden tener atributos como colspan y rowspan
+             para abarcar múltiples columnas o filas. Son el componente básico para mostrar datos en una tabla.    
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; td &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de TR&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Dato 1&lt;/td&gt;
+                                            &lt;td&gt;Dato 2&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                                  
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Thead </h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Agrupa una o más filas (tr) que contienen celdas de encabezado (th). Se utiliza para separar el encabezado de la tabla del cuerpo (tbody).
+            Facilita la aplicación de estilos y scripts solo a los encabezados. Además, ayuda a mantener el encabezado visible en tablas grandes
+             mientras se desplaza el contenido. Mejora la organización y claridad de la tabla.
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; Thead  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de THEAD&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;thead&gt;
+                                            &lt;tr&gt;
+                                                &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                                &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/thead&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Dato 1&lt;/td&gt;
+                                                &lt;td&gt;Dato 2&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt; 
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" > Tbody</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Contiene el cuerpo principal de la tabla, agrupando filas (tr) que tienen celdas de datos (td). Es esencial para separar
+            visualmente y lógicamente los datos del encabezado y pie de tabla. Facilita la aplicación de estilos y scripts específicos
+             al cuerpo de la tabla. Aunque opcional, su uso es recomendado para mejorar la estructura y accesibilidad. 
+             Ayuda a organizar grandes cantidades de datos de manera clara.  
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;   &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de TBODY&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;thead&gt;
+                                            &lt;tr&gt;
+                                                &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                                &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/thead&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Dato 1&lt;/td&gt;
+                                                &lt;td&gt;Dato 2&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Dato 3&lt;/td&gt;
+                                                &lt;td&gt;Dato 4&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;  
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Tfoot</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Agrupa filas (tr) que suelen contener información de resumen, como totales o notas al pie. Se coloca generalmente después del
+            cuerpo de la tabla (tbody), pero puede aparecer antes en el código HTML. Facilita la presentación de datos agregados o finales.
+             Es útil para mejorar la estructura y accesibilidad, permitiendo que el pie de tabla sea visible incluso en tablas largas.
+              Mejora la legibilidad y organización de los datos.  
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; Tfoot  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de TFOOT&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;thead&gt;
+                                            &lt;tr&gt;
+                                                &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                                &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/thead&gt;
+                                        &lt;tbody&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;Dato 1&lt;/td&gt;
+                                                &lt;td&gt;Dato 2&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tbody&gt;
+                                        &lt;tfoot&gt;
+                                            &lt;tr&gt;
+                                                &lt;td colspan=&quot;2&quot;&gt;Pie de tabla&lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/tfoot&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" > col</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Define el estilo para una o varias columnas de la tabla, cuando se coloca dentro de (colgroup). 
+            Permite aplicar propiedades de estilo de forma consistente a toda una columna. Facilita la personalización de ancho,
+             color de fondo, o bordes de columnas enteras. Se utiliza para simplificar el manejo de tablas complejas. 
+             Es especialmente útil para mantener la consistencia en la presentación de datos. 
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; Col  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de COL&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;table border=&quot;1&quot;&gt;
+                                                &lt;colgroup&gt;
+                                                    &lt;col style=&quot;background-color:lightblue&quot;&gt;
+                                                    &lt;col style=&quot;background-color:lightgreen&quot;&gt;
+                                                &lt;/colgroup&gt;
+                                                &lt;tr&gt;
+                                                    &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                                    &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;Dato 1&lt;/td&gt;
+                                                    &lt;td&gt;Dato 2&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/table&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Colgroup</h3>
+    </div>
+    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+            Agrupa varios elementos (col), permitiendo la aplicación de estilos a múltiples columnas de la tabla.
+            Facilita la personalización de ancho, color o estilo de varias columnas simultáneamente. 
+            Es útil para definir la estructura de columnas antes de que se carguen los datos. 
+            Mejora la organización del código HTML al aplicar estilos de manera centralizada. 
+            Es esencial para tablas con muchas columnas que comparten propiedades comunes.  
+
+        </p>
+        <div class="bloque">
+            <table style="width:60%; border-collapse: collapse;">
+                <tr>
+                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 2px solid #ddd;">&lt; Colgroup  &gt;</td>             
+                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                            <pre>
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;Ejemplo de COLGROUP&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;table border=&quot;1&quot;&gt;
+                                        &lt;colgroup&gt;
+                                            &lt;col style=&quot;background-color:lightblue&quot;&gt;
+                                            &lt;col style=&quot;background-color:lightgreen&quot;&gt;
+                                        &lt;/colgroup&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Encabezado 1&lt;/th&gt;
+                                            &lt;th&gt;Encabezado 2&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Dato 1&lt;/td&gt;
+                                            &lt;td&gt;Dato 2&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                                  
+                               </pre>
+                           </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
+    <style>
+        /* Estilo para el contenedor */
+        .container {
+            display: flex; /* Utiliza flexbox para alinear los bloques */
+        }
+        
+        /* Estilo para los bloques */
+        .bloque {
+            
+            width: 100%; /* Cada bloque ocupa el 50% del ancho */
+            padding:10px; /* Espaciado interno */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 10px; /* Espacio entre los bloques */
+        }
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-image: url('fondo.png');
+            position: fixed;
+            height: 100%;
+            border: white 5px;
+            overflow: auto;
+        }
+        
+        ul.sidenav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #ff8800;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #ff8800;
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+    </style>
+    
+    <style>
+        /* Estilo para ocultar el enlace */
+        .enlace-oculto {
+            color: inherit; /* Hereda el color del texto padre */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+    </style>
+
+    <style>
+        
+        /* Estilo para los bloques */
+        .bloque {
+            padding: 30px; /* Espaciado interno */
+            padding-left: 5%;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para los bloques */
+            width: 100%; /* Ancho del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        
+    </style>
+</head>
+
+<ul class="sidenav">
+    <td><img src="icons8-menú-50.png" height="30"></td> 
+    <td><img src="icons8-usuario-50.png" height="30"></td>
+    <td><img src="logo.png" height="30"c> </td>
+    <li><a class="active" href="#home">Menu de contenido</a></li>
+    <li><a href="#news">!DOCTYPE</a></li>
+    <li><a href="#contact">Html</a></li>
+    <li><a href="#about">Head</a></li>
+    <li><a href="#news">Body</a></li>
+    <li><a href="#contact">Title</a></li>
+    <li><a href="#about">Meta</a></li>
+    <li><a href="#contact">Base</a></li>
+    <li><a href="#about">Link</a></li>
+    <li><a href="#news">Style</a></li>
+    <li><a href="#contact">Details</a></li>
+    <li><a href="#about">Summary</a></li>
+    <li><a href="#contact">!--</a></li>
+</ul>
+<body >
+
+    <div class="container">
+        <div class="bloque">
+            <center>
+                <div style="background-color: white; width: 35%;border-radius: 60px;align-content: center;">
+                    <h1 style="color: #4d4d4d;">Etiquetas para la base del documento</h1>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >!DOCTYPE</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para informar al navegador web sobre la versión del lenguaje HTML 
+                        que se está utilizando en un documento. Es una instrucción que debe estar en la 
+                        primera línea del documento HTML antes de cualquier otra etiqueta. Su función principal 
+                        es asegurar que el navegador renderice la página de acuerdo con los estándares del HTML especificado.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="border: 2px solid #ddd;">&lt;!DOCTYPE html&gt;</td>
+                           
+                                <td style="border: 2px solid #ddd;">
+                                    <pre>
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de DOCTYPE&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+                                        &lt;p&gt;Este es un documento HTML5.&lt;/p&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                    </pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Html</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para informar al navegador web sobre la versión del lenguaje HTML 
+                        que se está utilizando en un documento. Es una instrucción que debe estar en la 
+                        primera línea del documento HTML antes de cualquier otra etiqueta. Su función principal 
+                        es asegurar que el navegador renderice la página de acuerdo con los estándares del HTML especificado.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                    &lt;html&gt;
+                                     &lt;head&gt;
+                                  &lt;title&gt;Ejemplo de HTML&lt;/title&gt;
+                                    &lt;/head&gt;
+                                     &lt;body&gt;
+                                  &lt;p&gt;Contenido dentro de la etiqueta HTML.&lt;/p&gt;
+                              &lt;/body&gt;
+                             &lt;/html&gt;
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Head</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Es un contenedor para los elementos de metadatos y configuraciones del documento HTML. Dentro de (head), 
+                        se pueden incluir etiquetas que definen el título de la página, enlaces a hojas de estilo externas, 
+                        scripts, metadatos como el conjunto de caracteres, y otros elementos que no son visibles directamente en la página,
+                         pero que son esenciales para la estructura y el comportamiento del documento.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Head&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        &lt;p&gt;Contenido del cuerpo.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Body</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Define el cuerpo del documento HTML y contiene todo el contenido que se mostrará en la página web, 
+                        como texto, imágenes, videos, enlaces, formularios, y otros elementos multimedia e interactivos.
+                        Todo lo que está dentro de la etiqueta (body) es lo que el usuario verá en el navegador.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de Body&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Título dentro del cuerpo&lt;/h1&gt;
+                                            &lt;p&gt;Este es el contenido principal.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                     </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Title</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Define el título del documento HTML y se utiliza para especificar el texto que aparecerá en la pestaña 
+                     del navegador o en el encabezado de la ventana. El título es importante para la identificación de la 
+                     página y también es utilizado por los motores de búsqueda para indexar y clasificar el contenido de la web.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Este es el título de la página&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;p&gt;Contenido dentro del cuerpo.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Meta</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para proporcionar metadatos sobre el documento HTML. Estos metadatos pueden incluir información 
+                        sobre el conjunto de caracteres, la descripción de la página, palabras clave, autor, y otras configuraciones 
+                        que ayudan a los navegadores y motores de búsqueda a entender el contenido y las características del documento.
+                        Las etiquetas (meta) no se muestran directamente en la página, pero son fundamentales para la optimización y la 
+                        funcionalidad de la web.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                            &lt;meta name=&quot;description&quot; content=&quot;Ejemplo de meta tag&quot;&gt;
+                                            &lt;title&gt;Ejemplo de Meta&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;p&gt;Contenido dentro del cuerpo.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                     </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Base</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para establecer una URL base para todos los enlaces 
+                  relativos en un documento HTML. Esto significa que si se especifica una URL base,
+                   todos los enlaces (enlaces <a>, imágenes <img>, etc.) que utilicen rutas relativas 
+                      se resolverán en relación con esta URL base. Esto es útil para simplificar la gestión 
+                      de enlaces en documentos donde se pueden mover los archivos a diferentes directorios. 
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;base href=&quot;https://www.ejemplo.com/&quot;&gt;
+                                            &lt;title&gt;Ejemplo de Base&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;p&gt;Enlaces relativos usarán la base especificada.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt; 
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Link</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para establecer relaciones entre el documento HTML y otros recursos externos, 
+                        como hojas de estilo (CSS), iconos, y más. Comúnmente, se utiliza para enlazar hojas de estilo CSS, 
+                        lo que permite dar formato y diseño a la página web. Esta etiqueta debe colocarse dentro de la sección
+                         (head) del documento.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;link rel=&quot;stylesheet&quot; href=&quot;estilos.css&quot;&gt;
+                                            &lt;title&gt;Ejemplo de Link&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;p&gt;Este es un párrafo estilizado con CSS.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                     </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Style</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para definir estilos CSS directamente dentro de un documento HTML. Permite a los desarrolladores especificar
+                        reglas de estilo que afectarán a los elementos del documento. Esta etiqueta se coloca dentro de la sección (head) y es
+                            útil para estilos que son específicos de una única página, en lugar de enlazar a una hoja de estilo externa.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;style&gt;
+                                                body { font-family: Arial, sans-serif; }
+                                                h1 { color: blue; }
+                                            &lt;/style&gt;
+                                            &lt;title&gt;Ejemplo de Style&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Texto en color azul&lt;/h1&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Details</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para crear un widget que permite a los usuarios mostrar u ocultar información adicional.
+                     Se puede utilizar junto con la etiqueta (summary>), 
+                     que proporciona un encabezado que el usuario puede hacer clic para expandir o contraer el contenido adicional.
+                      Esta funcionalidad es útil para mejorar la experiencia del usuario al permitir que se oculte información que no
+                       es necesaria en la vista inicial.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                        &lt;title&gt;Ejemplo de Details&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        &lt;details&gt;
+                                        &lt;summary&gt;Más información&lt;/summary&gt;
+                                        &lt;p&gt;Aquí tienes más detalles sobre el tema.&lt;/p&gt;
+                                        &lt;/details&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;                                        
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Summary</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza dentro de la etiqueta (details) para proporcionar un encabezado que los usuarios pueden hacer 
+                        clic para expandir o contraer el contenido adicional. El texto dentro de (summary) es visible de forma 
+                            predeterminada y actúa como un título que describe el contenido que se puede mostrar u ocultar.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de Summary&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;details&gt;
+                                                &lt;summary&gt;Clic para más información&lt;/summary&gt;
+                                                &lt;p&gt;Este texto aparece cuando se expande.&lt;/p&gt;
+                                            &lt;/details&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;                                                
+                                    </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+            </center>
+            <br>
+            <br>
+            <center>
+                <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                    <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >!--</h3>
+                </div>
+                <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                    <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                        Se utiliza para crear comentarios en un documento HTML. Los comentarios son notas que los
+                     desarrolladores pueden incluir en el código para proporcionar explicaciones, anotaciones o recordatorios.
+                      Los comentarios no se muestran en el navegador y son ignorados por el motor de renderizado, 
+                      lo que los hace útiles para documentar el código sin afectar la presentación o la funcionalidad de la página.
+                    </p>
+                    <div class="bloque">
+                        <table style="width:60%; border-collapse: collapse;">
+                            <tr>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Sintaxis</th>
+                                <th style="text-align:left; padding: 8px; border: 1px solid #ddd;">Ejemplo</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 2px solid #ddd;">&lt;Html&gt;</td>
+                                <td style="padding: 8px; border: 2px solid #ddd;">
+                                    <pre>
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Ejemplo de Comentarios&lt;/title&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;!-- Este es un comentario en HTML --&gt;
+                                            &lt;p&gt;Este es un párrafo visible.&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        
+                                      </pre>
+                                </td>
+                            </tr>     
+                        </table>
+                    </div>
+                </div>
+              </center>   
+    </body>
+</html>

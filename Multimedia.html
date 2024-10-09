@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   
+    <style>
+        .bloque {
+            
+            width: 100%; /* Cada bloque ocupa el 50% del ancho */
+            padding:10px; /* Espaciado interno */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+            margin: 10px; /* Espacio entre los bloques */
+        }
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            background-image: url('fondo.png');
+            position: fixed;
+            height: 100%;
+            border: white 5px;
+            overflow: auto;
+        }
+        
+        ul.sidenav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        ul.sidenav li a.active {
+            background-color: #ff8800;
+            color: white;
+        }
+        
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #ff8800;
+            color: white;
+        }
+
+    </style>
+
+    <style>
+        /* Aplicar un fondo a toda la página */
+        body {
+            background-image: url('fondo.png');
+            background-size:cover; /*cubre el fondo*/  
+            font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a toda la página */
+        }
+    </style>
+    
+    <style>
+        /* Estilo para ocultar el enlace */
+        .enlace-oculto {
+            color: inherit; /* Hereda el color del texto padre */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+    </style>
+
+    <style>
+        
+        /* Estilo para los bloques */
+        .bloque {
+            padding: 30px; /* Espaciado interno */
+            padding-left: 5%;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para los bloques */
+            width: 100%; /* Ancho del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        
+    </style>
+</head>
+
+<ul class="sidenav">
+    <td><img src="icons8-menú-50.png" height="30"></td> 
+    <td><img src="icons8-usuario-50.png" height="30"></td>
+    <td><img src="logo.png" height="30"c> </td>
+    <li><a class="active" href="#home">Menu de contenido</a></li>
+    <li><a href="#news">Iframe</a></li>
+    <li><a href="#contact">Embed</a></li>
+    <li><a href="#about">Object</a></li>
+    <li><a href="#news">Param</a></li>
+    <li><a href="#contact">Map</a></li>
+    <li><a href="#about">Area</a></li>
+    <li><a href="#about">Progress </a></li>
+    <li><a href="#about">Meter </a></li>
+    <li><a href="#about">Code</a></li>
+    <li><a href="#about">KBD </a></li>
+    <li><a href="#about">Samp </a></li>
+    <li><a href="#about">Var</a></li>
+</ul>
+
+</head>
+<body>
+   
+
+
+     <center>
+        <div class="bloque"> 
+                <h1 style="color: #4d4d4d;">Etiquetas para crear multimedia y scripts</h1>
+                <br>
+
+
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Iframe</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta (iframe) se utiliza para incrustar otra página web dentro de la página actual. Funciona como un contenedor
+                     que muestra un documento HTML independiente, el cual puede provenir del mismo sitio o de un dominio externo. A través
+                      de atributos como src, se define la URL del contenido a incrustar, y con width y height, se ajustan las dimensiones 
+                      del marco. Es útil para integrar contenido externo como videos de YouTube, mapas interactivos, o aplicaciones web. 
+                      Los iframes pueden afectar el rendimiento y la seguridad, por lo que deben usarse con cuidado. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;iframe&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>                                      
+                        &lt;html&gt;
+                        &lt;head&gt;
+                      &lt;title&gt;Ejemplo de Iframe&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                      &lt;iframe src="https://www.example.com" width="600" height="400" frameborder="0"&gt;
+                      Este contenido no puede ser mostrado porque tu navegador no soporta iframes.
+                      &lt;/iframe&gt;
+                       &lt;/body&gt;
+                       &lt;/html&gt;
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Embed</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta (embed) se utiliza para incrustar contenido multimedia o aplicaciones en la página web. Es similar a (iframe)
+                            pero está más enfocada en incluir objetos que no son HTML, como archivos Flash, videos, o incluso contenido de plugins. 
+                            El atributo src especifica la URL del recurso a incrustar, mientras que width y height definen su tamaño. Es una etiqueta
+                             auto-cerrada y no tiene contenido interno. Es una forma rápida de integrar contenido externo, pero como (iframe), 
+                             ebe usarse con precaución para evitar problemas de seguridad. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Embed&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>                           
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title&gt;Ejemplo de Embed&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;embed src="example-file.pdf" type="application/pdf" width="600" height="400" /&gt;
+                    &lt;embed src="example-video.mp4" type="video/mp4" width="600" height="400" /&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;                     
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Object</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta (object) es un contenedor versátil para incrustar cualquier tipo de contenido multimedia, como imágenes, 
+                            videos, aplicaciones, o documentos PDF. Permite especificar un recurso externo mediante el atributo data, que indica la URL 
+                            del archivo a mostrar, y type, que define el tipo MIME del recurso. Dentro de (object), se pueden incluir varias etiquetas 
+                            (param) para proporcionar parámetros adicionales al objeto incrustado. Es más flexible que (embed) y (iframe), permitiendo
+                             una mayor integración de contenido interactivo y multimedia. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Object&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                 &lt;html&gt;
+                 &lt;head&gt;
+                 &lt;title&gt;Ejemplo de Object&lt;/title&gt;
+                 &lt;/head&gt;
+                 &lt;body&gt;
+                 &lt;object data="example-file.pdf" type="application/pdf" width="600" height="400"&gt;
+                <p>Tu navegador no soporta la visualización de PDFs. Puedes <a href="example-file.pdf">descargar el archivo aquí</a>.</p>
+                &lt;/object&gt;                                 
+                &lt;object data="example-video.mp4" type="video/mp4" width="600" height="400"&gt;
+                <p>Tu navegador no soporta la visualización de este video. Puedes <a href="example-video.mp4">descargar el archivo aquí</a>.</p>
+                 &lt;/object&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Param</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta (param) se utiliza dentro de (object) para pasar parámetros específicos al recurso incrustado. 
+                    Cada (param) define un par clave-valor, donde name especifica el nombre del parámetro y value define su valor. 
+                    Es esencial para controlar cómo se presenta o se comporta el contenido incrustado, permitiendo ajustes como la configuración
+                     de un video, la definición de un ID de documento, o la personalización de una aplicación Flash. Aunque es una etiqueta 
+                     auto-cerrada, es crucial para proporcionar opciones adicionales al objeto. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Param&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+     &lt;html&gt;
+     &lt;head&gt;
+     &lt;title&gt;Ejemplo de Param&lt;/title&gt;
+     &lt;/head&gt;
+     &lt;body&gt;
+    &lt;object data="example-file.swf" type="application/x-shockwave-flash" width="600" height="400"&gt;
+     &lt;param name="movie" value="example-file.swf"&gt;
+    &lt;param name="quality" value="high"&gt;
+    &lt;param name="bgcolor" value="#ffffff"&gt;
+    <p>Tu navegador no soporta el objeto Flash. Puedes <a href="example-file.swf">descargar el archivo aquí</a>.</p>
+     &lt;/object&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;   
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Map</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta (map) se utiliza para definir un mapa de imagen, que es una imagen con áreas seleccionables que actúan como enlaces.
+                            Dentro de (map), se definen varias etiquetas (area) que especifican las regiones interactivas de la imagen, asociadas a enlaces
+                             mediante el atributo href. Cada (area) se puede definir en forma de rectángulos, círculos, o polígonos para delinear partes 
+                             específicas de la imagen. El atributo name de (map) se enlaza con el atributo usemap de una imagen para asociar la imagen 
+                             con el mapa interactivo. Es útil para crear gráficos navegables o imágenes con enlaces específicos.  
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Map&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+    &lt;html&gt;
+     &lt;head&gt;
+    &lt;title&gt;Ejemplo de Map&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;img src="example-image.jpg" usemap="#image-map" width="600" height="400" alt="Imagen con mapa de imagen"&gt;                        
+    &lt;map name="image-map"&gt;
+    &lt;area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="Enlace a Example.com"&gt;
+    &lt;area shape="circle" coords="200,200,50" href="https://www.example.org" alt="Enlace a Example.org"&gt;
+    &lt;area shape="poly" coords="300,100,400,150,350,200" href="https://www.example.net" alt="Enlace a Example.net"&gt;
+    &lt;/map&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;                                             
+  </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Area</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta area se utiliza dentro de un elemento map para definir áreas activas en una imagen de mapa de imagen. 
+                            Estas áreas son zonas clicables que pueden redirigir a diferentes URLs o activar otras acciones. Cada area define una región
+                             de la imagen y su comportamiento asociado, como enlaces o scripts.  
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;area&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Ejemplo de Area&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;img src="example-image.jpg" usemap="#image-map" width="600" height="400" alt="Imagen con mapa de imagen"&gt;                                  
+    &lt;map name="image-map"&gt;
+    &lt;area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="Enlace a Example.com"&gt;
+    &lt;area shape="circle" coords="200,200,50" href="https://www.example.org" alt="Enlace a Example.org"&gt;
+    &lt;area shape="poly" coords="300,100,400,150,350,200" href="https://www.example.net" alt="Enlace a Example.net"&gt;
+    &lt;/map&gt;
+    &lt;/body&gt;
+    &lt;/html&gt; 
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Progress</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta progress se utiliza para mostrar el progreso de una tarea o proceso en curso. Es un elemento visual que presenta
+                            una barra de progreso que indica cuánto se ha completado de una tarea. Se usa comúnmente para representar la carga de archivos,
+                             el progreso de una descarga o el avance en una operación de procesamiento.  
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;Progress&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                &lt;html&gt;
+                 &lt;head&gt;
+                 &lt;title&gt;Ejemplo de Progress&lt;/title&gt;
+                 &lt;/head&gt;
+                 &lt;body&gt;
+                 &lt;h2&gt;Barra de Progreso&lt;/h2&gt;                        
+                &lt;progress value="70" max="100" style="width: 300px;"&gt;70%&lt;/progress&gt;                                  
+                &lt;p&gt;Esta barra de progreso indica un progreso del 70%.&lt;/p&gt;
+                 &lt;/body&gt;
+                 &lt;/html&gt;  
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Meter</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta meter se emplea para representar una medida escalar dentro de un rango conocido. A diferencia de progress,
+                            que se enfoca en el progreso, meter se usa para mostrar valores de medición como la cantidad de batería restante, 
+                            la temperatura o el nivel de un recurso. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;meter&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                &lt;html&gt;
+                 &lt;head&gt;
+                &lt;title&gt;Ejemplo de Meter&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h2&gt;Medidor&lt;/h2&gt;
+                                        
+                &lt;meter value="0.6" min="0" max="1" low="0.2" high="0.8" optimum="0.5" style="width: 300px;"&gt;60%&lt;/meter&gt;
+                                        
+                &lt;p&gt;Este medidor muestra un valor de 60% con una gama de valores bajos, altos y óptimos.&lt;/p&gt;
+                 &lt;/body&gt;
+                 &lt;/html&gt; 
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Code</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta code se emplea para denotar un fragmento de código de computadora dentro de un texto. Esta etiqueta se usa principalmente
+                            en documentos técnicos o tutoriales para destacar el código fuente, ya sea en HTML, CSS, JavaScript u otros lenguajes de programación. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;code&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Ejemplo de Code&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h2&gt;Código en Línea&lt;/h2&gt;
+                                                   
+            &lt;p&gt;Aquí hay un ejemplo de código en línea usando la etiqueta &lt;code&gt;.&lt;/p&gt;
+            &lt;p&gt;El código de ejemplo es: &lt;code&gt;console.log('Hola, mundo!');&lt;/code&gt;&lt;/p&gt;
+                                                    
+            &lt;h2&gt;Código en Bloque&lt;/h2&gt;
+            &lt;pre&gt;
+            &lt;code&gt;
+            function greet() {
+            console.log('Hola, mundo!');
+             }
+            greet();
+            &lt;/code&gt;
+            &lt;/pre&gt;
+            &lt;/body&gt;
+            &lt;/html&gt; 
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Kbd</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta kbd se utiliza para representar la entrada del teclado del usuario en un documento HTML. Es útil para mostrar qué 
+                            combinaciones de teclas deben presionarse para realizar una acción o comando específico. El texto dentro de kbd se presenta 
+                            típicamente en una fuente monoespaciada para emular el aspecto de las teclas del teclado 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;kbd&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Ejemplo de KBD&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h2&gt;Entrada del Teclado&lt;/h2&gt;
+                                                    
+            &lt;p&gt;Para copiar y pegar texto, presiona &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; para copiar y 
+            &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;V&lt;/kbd&gt; para pegar.&lt;/p&gt;
+                                                    
+            &lt;p&gt;Para guardar un archivo, utiliza &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;  
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Samp</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta samp se usa para representar una muestra de salida de un programa o una aplicación. Es comúnmente utilizada en 
+                            documentación técnica para mostrar el resultado o la salida de un código de ejemplo. El contenido dentro de samp generalmente
+                             se muestra en una fuente monoespaciada, similar a la usada para el código, para mantener la claridad en la 
+                             presentación de los datos de salida. 
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;samp&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;Ejemplo de Samp&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h2&gt;Salida de Ejemplo&lt;/h2&gt;
+                                                    
+                &lt;p&gt;Aquí se muestra un ejemplo de salida de un programa usando la etiqueta &lt;samp&gt;.&lt;/p&gt;
+                &lt;p&gt;La salida del programa es: &lt;samp&gt;Error: archivo no encontrado&lt;/samp&gt;.&lt;/p&gt;
+                                                    
+                &lt;p&gt;Otra salida del programa es: &lt;samp&gt;Conexión exitosa&lt;/samp&gt;.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div style="background-color: white; width: 10%;border-radius: 60px;align-content: center">
+                        <h3 style="font-size: 20px; font-family: 'Roboto Black'; color:#4d4d4d; text-align: center;" >Var</h3>
+                    </div>
+                    <div style="background-color: white; width: 80%;border-radius: 60px; ">
+                        <p style="text-align: justify; font-family: 'Futura Bold'; width: 80%; padding-top: 35px;">
+                            La etiqueta var se usa para denotar una variable en un contexto matemático o de programación dentro de un documento HTML.
+                            Permite resaltar el texto que representa una variable en fórmulas o fragmentos de código, ayudando a la comprensión del 
+                            contenido técnico. El texto dentro de var se muestra en cursiva por defecto, lo que ayuda a distinguirlo visualmente 
+                            del resto del texto   
+                        </p>
+                        <div class="bloque">
+                            <table style="width:60%; border-collapse: collapse;">
+                                <tr>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Sintaxis</th>
+                                    <th style="text-align:left; border: 1px solid #ddd;">Ejemplo</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px; border: 2px solid #ddd;">&lt;var&gt;</td>             
+                                           <td style="padding: 8px; border: 2px solid #ddd;"> 
+                                            <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Ejemplo de Var&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h2&gt;Variable&lt;/h2&gt;
+                                                    
+            &lt;p&gt;En el siguiente ejemplo, &lt;var&gt;x&lt;/var&gt; es una variable en un cálculo matemático.&lt;/p&gt;
+            &lt;p&gt;La ecuación es: &lt;var&gt;x&lt;/var&gt; + 10 = 20, por lo tanto, &lt;var&gt;x&lt;/var&gt; = 10.&lt;/p&gt;
+                                                    
+            &lt;p&gt;Otra variable en el contexto es &lt;var&gt;y&lt;/var&gt;, que se define como &lt;var&gt;y&lt;/var&gt; = &lt;var&gt;x&lt;/var&gt; + 5.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+                                               </pre>
+                                           </td>
+                                </tr>   
+                            </table>
+                        </div>
+                    </div>
+                </center>
+      
+        </div>
+
+     </center>
+</body>
+</html>
